@@ -1,0 +1,74 @@
+body{
+    width: 100%;
+    height: 100svh;
+    margin: 0;
+    background: hsl(0, 0%, 90%);
+}
+.container{
+    min-width: 400px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 40px;
+    background-color: hsl(0, 0%, 80%);
+}
+form{
+    margin-bottom: 40px;
+}
+input[type="text"]{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;   
+}
+button{
+    font-size: 0.8em;
+    font-weight: 600;
+    color: hsl(0, 0%, 90%);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: hsl(240, 100%, 60%);
+    cursor: pointer;
+    transition: background 0.1s ease;
+}
+button:hover{
+    background-color: hsl(240, 100%, 40%);
+}
+.weatherDisplay{
+    min-width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    background: linear-gradient(160deg, hsl(230, 90%, 60%), hsl(220, 90%, 80%));
+}
+.cityDisplay{
+    font-size: 3.5rem;
+    margin-block: 0;
+}
+.tempDisplay{
+    font-size: 3rem;
+    font-weight: bold;
+    margin-block: 20px;
+}
+.humidityDisplay{
+    margin-top: 0;
+    font-size: 1em;
+    font-weight: 600;
+}
+.conditionDisplay{
+    margin-top: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-style: italic;
+}
+.emojiDisplay{
+    font-size: 6rem;
+    margin-block: 5px;
+}
+.errorMessage{
+    font-size: 2rem;
+}
