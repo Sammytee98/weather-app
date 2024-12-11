@@ -98,7 +98,7 @@ const humidtyWindSunset = (name, value) => {
 const emojiDisplay = (emoji, weatherId) => {
     switch (true) {
         case (weatherId >= 200 && weatherId <=232):
-            emoji.style.textShadow = '0 0 5px white';
+            emoji.style.textShadow = '0 0 5px hsl(220, 90%, 80%)';
             return '⛈️';
         break;
 
@@ -113,7 +113,7 @@ const emojiDisplay = (emoji, weatherId) => {
         break;
 
         case (weatherId >= 600 && weatherId <=622):
-            emoji.style.textShadow = '0 0 5px white';
+            emoji.style.textShadow = '0 0 5px hsl(220, 90%, 80%)';
             return '❄️';
         break;
 
@@ -123,7 +123,7 @@ const emojiDisplay = (emoji, weatherId) => {
         break;
 
         case (weatherId === 800):
-            emoji.style.textShadow = '0 0 5px white';
+            emoji.style.textShadow = '0 0 10px yellow';
             return '🌟';
         break;
 
