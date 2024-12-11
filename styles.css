@@ -3,9 +3,10 @@ body{
     height: 100svh;
     margin: 0;
     background: hsl(0, 0%, 90%);
+    font-family: 'Roboto', sans-serif;
 }
 .container{
-    min-width: 400px;
+    min-width: 500px;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -37,38 +38,90 @@ button:hover{
     background-color: hsl(240, 100%, 40%);
 }
 .weatherDisplay{
-    min-width: 350px;
+    min-width: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 10px;
     padding: 10px;
     border-radius: 5px;
     background: linear-gradient(160deg, hsl(230, 90%, 60%), hsl(220, 90%, 80%));
+    animation: fadeIn 0.5s ease-in;
 }
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 .cityDisplay{
     font-size: 3.5rem;
     margin-block: 0;
 }
 .tempDisplay{
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: bold;
     margin-block: 20px;
 }
-.humidityDisplay{
-    margin-top: 0;
-    font-size: 1em;
-    font-weight: 600;
-}
+
 .conditionDisplay{
     margin-top: 0;
-    font-size: 1.2rem;
-    font-weight: 600;
+    font-size: 1rem;
     font-style: italic;
 }
 .emojiDisplay{
-    font-size: 6rem;
+    font-size: 7rem;
     margin-block: 5px;
 }
+
+.details{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.details p{
+    width: 120px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background: linear-gradient(to bottom, hsl(220, 90%, 80%), hsl(230, 90%, 60%));
+    border-radius: 5px;
+    backdrop-filter: blur(10px);
+    box-shadow: 2px 2px 5px hsl(250, 90%, 50%);
+    font-style: italic;
+}
+.details p span{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
 .errorMessage{
-    font-size: 2rem;
+    font-size: 1.5rem;
+    color: hsl(0, 70%, 50%);
+    margin-top: 20px;
+    padding: 10px;
+    background-color: hsl(0, 50%, 90%);
+    border-radius: 5px;
+}
+.hidden{
+    display: none;
+}
+
+/* Responsive design */
+
+@media (max-width: 600px){
+    .container{
+        min-width: 80%;
+        padding: 20px;
+    }
+    .weatherDisplay{
+        min-width: 90%;
+        padding: 5px;
+    }
 }

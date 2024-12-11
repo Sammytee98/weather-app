@@ -3,22 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Simpple weather app to display current weather conditions.">
+    <meta name="keywords" content="weather, weather app, forecast, temperature, city">
+    <meta name="author" content="Big Sam">
     <title>Weather App</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     
     <div class="container">
         <form class="getWeather">
-            <input class="cityName" type="text" placeholder="Enter city">
+            <input class="cityName" type="text" placeholder="Enter city" aria-label="City Name" required>
             <button type="submit">Get Weather</button>
         </form>
         <div class="weatherDisplay">
             <!-- <h1 class="cityDisplay">Miami</h1>
-            <p class="tempDisplay">12°C</p>
-            <p class="humidityDisplay">Humidity: 73%</p>
-            <p class="conditionDisplay">overcast clouds</p>
             <p class="emojiDisplay">☁️</p> 
+            <p class="tempDisplay">12°C</p>
+            <p class="conditionDisplay">overcast clouds</p>
+            <div class="details">
+                <p class="humidityDisplay">Humidity <span>73%</span></p>
+                <p class="windDisplay">Wind <span>73 m/s</span></p>
+                <p class="sunsetDisplay">Sunset <span>73%</span></p>
+            </div>
             <p class="errorDisplay" style="display: none;">Enter a city</p> -->
         </div>
     </div>
