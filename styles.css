@@ -113,8 +113,6 @@ button:hover{
     color: hsl(0, 70%, 50%);
     margin-top: 20px;
     padding: 10px;
-    background-color: hsl(0, 50%, 90%);
-    border-radius: 5px;
 }
 .hidden{
     display: none;
